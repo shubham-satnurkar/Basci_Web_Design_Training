@@ -1,0 +1,75 @@
+<!DOCTYPE html><!-- dtd path : document type definition -->
+<html>
+    <head>
+        <title>DOM</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur webpage" >
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            #box{
+                width: 200px;height: 200px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body id="bd">
+    <section>
+        <h2 class="heading">RED ROSE</h2>
+             <img src="../img/img-1.jpg" width="200px" height="200px" alt="image1"> 
+        <p id="mypara1">
+           <strong>  About red rose</strong>
+        </p>
+        <p id="mypara3">
+
+        </p>
+    </section>
+    <section>
+        <h1 class="heading">BLUE ROSE</h1>
+        <button id="zoombtn">ZOOM</button> <br>
+            <img id="bluerose" src="../img/img-2.jpg" alt=" image2" width="200px" height="200">
+        <p id="mypara2">
+            About blue rose
+        </p>
+    </section>
+    <div>
+        <input type="radio" id="r1" name="gender" value="male" onchange="showState()" >
+        <input type="radio" id="r2" name="gender" value="female" onchange="showState()">
+    </div>
+
+    <!-- Breakfast Items -->
+    <input type="button" value="Show Items"  id="breakfast">
+    <hr>
+
+    <br>
+    <section>
+        <input type="text" value="India" readonly>
+        <input type="text" value="Japan" >
+        <input type="text" value="USA" readonly>
+        <input type="text" value="UK" >
+        <input type="text" value="China" readonly>
+        <input type="text" value="Russia" >
+        <input type="text" value="Africa" readonly>
+    </section>
+    <br><br>
+
+    <div>
+        <label for="Choose City :"></label>
+        <input type="text" id="focusMe">
+    </div>
+    <br><br>
+
+    <div id="box">
+
+    </div>
+    <button id="btnanime">Animate Now</button>
+
+    <br><br><br>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="js/DOM.js"></script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <!-- Headings -->
+            <div class="col-12 text-center p-3 bg-light shadow">
+                <h1 class="text-secondary">To Do List</h1>
+            </div>
+            <!-- Input Task form -->
+            <div class="col-12 p-3 bg-secondary shadow">
+                <form class="form row pb-3">
+                    <div class="form-group col-10 position-relative">
+                        <input type="text" class="form-control" placeholder="Add Task" id="inputTask">
+                        <span class="position-absolute text-danger" id="error" style="bottom: -25px;"></span>
+                        <input type="hidden" id="saveTaskInput">
+                    </div>
+                    <div class="form-group col-2">
+                        <button class="btn btn-success w-100" id="addTask">Add Task</button>
+                        <button class="btn btn-success w-100"  id="saveTaskBtn"  style="display: none;">Add Task</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Task Table -->
+            <div class="col-12 p-4 ">
+                <table class="table table-hoverable align-items-center" id="taskTable">
+                    <!-- <tr>
+                        <th width="75%" class="p-3">welcome</th>
+                        <th>
+                            <button class="btn btn-info" id="editTask">Edit Task</button>
+                        </th>
+                        <th>
+                             <button class="btn btn-danger" id="deleteTask">Delete Task</button>
+                        </th>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="todo.js"></script>
+    
+  </body>
+</html>

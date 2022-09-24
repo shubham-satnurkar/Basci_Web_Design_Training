@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Practice</title>
+		<style type="text/css">
+			svg{
+				display: block;
+
+			}
+			#rect{margin-left: 70px;}
+			.box{
+				width: 200px;
+				height: 200px;background-color: #0ff;
+				border: 1px solid #000;
+				padding: 50px;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body >
+		<progress value="30" max="100"></progress>
+		<ruby>Wlecome</ruby>
+		<meter></meter>
+
+		<input type="color" name="">
+		<input type="week" name="">
+		<input type="date" name="">
+		<input type="month" name="">
+		<input type="time" name="">
+		<input type="search" name="">
+		<input type="tel" name="">
+
+		<canvas id="myCanvas" style="border:1px solid red;display: block;width: 300px;height: 150px;">
+			
+		</canvas>
+
+		<svg id="svgelem" >
+        	<circle id="greencircle" cx="100" cy="100" r="50" fill="green" />
+    	</svg>
+       	<svg id="rect">
+       		<rect width="60" height="100" style="fill:green;stroke-width:1;stroke:green" />
+       	</svg>
+
+       	<div class="box"></div>
+
+       	<p>
+       		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       	</p>
+
+
+       	<q>Welcome</q>
+       	<blockquote>
+       		WElcome to India
+       	</blockquote>
+
+
+
+
+
+
+
+
+
+       	<script>
+       		var box = document.getElementById("myCanvas");
+       		var ctx = box.getContext('2d');
+       		ctx.moveTo(0, 0);
+       		ctx.lineTo(300, 100);
+       		ctx.fillStyle = '#f09';
+       		ctx.fillRect(120, 25, 50, 50);
+       		ctx.arc(100, 100, 90, 0, 2 * Math.PI)
+       		ctx.stroke();
+       	</script>
+	</body>
+</html>

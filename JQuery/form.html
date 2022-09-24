@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+            .error{color: red;}
+        </style>
+    </head>
+    <body>
+        <form action="success.html"  novalidate>
+            <table>
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td><input type="text" name="fname" id="fname" onblur="validate1()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="error" id="error1"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name</label></td>
+                    <td><input type="text" name="lname" id="lname" onblur="validate2()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="error" id="error2"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" onblur="validate3()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="error" id="error3"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" name="pass" id="pass" onblur="validate4()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="error" id="error4"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="showpass"> Show Password
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Confirm password">Confirm Password</label></td>
+                    <td><input type="password" name="cpass" id="cpass" onblur="validate5()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="error" id="error5"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="Mobile">Mobile</label></td>
+                    <td><input type="text" name="mobile" id="mobile" onblur="validate6()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="error" id="error6"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" name="age" id="age" onblur="validate7()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="error" id="error7"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" id="regsub" name="sub" >
+                        <input type="reset" name="sub" >
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/validate.js"></script>
+    </body>
+</html>
